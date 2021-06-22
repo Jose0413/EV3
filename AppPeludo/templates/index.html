@@ -1,0 +1,179 @@
+{% load static %}
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Ayuda a un peludo </title>
+        <meta name"viewport" content="width=device-width, initial-scale=1">
+        
+        <link type="text/css" rel="stylesheet" href={% static 'css/bootstrap.min.css' %}>
+        <link type="text/css" rel="stylesheet" href={% static 'css/estilos.css' %}>
+
+
+    </head>
+    <body>
+        <div class="container" align="center">
+            <div class="row">
+                <div class="col-12" align="center">
+                    <img src={% static 'img/logo.jpg' %} width="100px"/>
+                </div>
+            </div>
+            <div class="row fondoceleste">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item col-2">
+                    <a class="nav-link active letrascolor" href="/home">Inicio</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="/listamascotas">Mascotas</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="#!">Donar</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="/clima">Clima</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="/formulario">Formulario</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row" align="center" >
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                        <img src={% static 'img/fondoa.jpg' %} width="200" height="200" class="d-block w-50" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                        <img src={% static 'img/fondob.png' %} width="200" height="200" class="d-block w-50" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src={% static 'img/fondoc.jpg' %} width="200" height="200" class="d-block w-50" alt="...">
+                        </div>
+                    </div>
+                    <button  class="carousel-control-prev opacidad" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev" >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="fondonegro">Atrás</span>
+                    </button>
+                    <button class="carousel-control-next opacidad" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="fondonegro">Siguiente</span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+        
+            <div class="row separador2">
+                <div class="col-6 fondoazul letrascolora separador4">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.  </p>
+                </div>
+                <div class="col-4 separador2 separador6" class="embed-responsive embed-responsive-16by9" >
+                   <iframe width="400" height="265" src="https://www.youtube.com/embed/HeiUiFWpjqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="row fondoceleste">
+                <ul class="nav justify-content-center">
+                    <li class="col-1 letrascolor">
+                    <p>Reseñas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row separador">
+                <div class="col-1">
+                    <img src={% static 'img/persona1.jpg' %} width="84" height="84">
+                </div>
+                <div class="col-8 letrascolorb">
+                     <h5>Media heading</h5>
+                     <h6 class="fondoazul">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</h6>
+                </div>
+            </div>
+
+            <div class="row separador">
+                <div class="col-1">
+                    <img src={% static 'img/persona2.jpg' %} width="84" height="84">
+                </div>
+                <div class="col-8 letrascolorb">
+                     <h5>Media heading</h5>
+                     <h6 class="fondoazul">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</h6>
+                </div>
+            </div>
+
+            <div class="row separador ">
+                <div class="col-1">
+                    <img src={% static 'img/persona3.jpg' %} width="84" height="84">
+                </div>
+                <div class="col-8 letrascolorb">
+                     <h5>Media heading</h5>
+                     <h6 class="fondoazul">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</h6>
+                </div>
+            </div>
+
+            <div class="row fondoceleste">
+                <ul class="nav justify-content-center">
+                    <li class="col-1 letrascolor">
+                    <p>Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+           
+            <div class="row separador3 "> 
+                <div class="col-12" align="center">
+                    <img class="rounded-circle" src={% static 'img/face.png' %} alt="Circle image" width="50px">
+                    <a id="enlaceafacebook" href="http://www.facebook.com" target="_blank" class="fondoazul opacidad">Visitar Nuestros Facebook</a>
+                </div>
+            </div>
+            
+            <div class="row separador3" id="enlaceainstagram">
+                <div class="col-12" align="center" id="enlaceainstagram">
+                    <img class="rounded-circle" src={% static 'img/insta.png' %} alt="Circle image" width="50px">
+                    <a id="enlaceainstagram" href="http://www.instagram.com" target="_blank" class="fondoazul opacidad">Visitar Nuestros Instagram</a>
+                </div>
+            </div>
+
+            <div class="row separador3">
+                <div class="col-12" align="center">
+                    <img class="rounded-circle" src={% static 'img/twitter.png' %} alt="Circle image" width="50px">
+                    <a id="enlaceatwitter" href="http://www.twitter.com" target="_blank" class="fondoazul opacidad">Visitar Nuestros Twitter</a>
+                </div>
+            </div>
+
+            <div class="row separador3" >
+                <div class="col-5" align="right">
+                    <img class="rounded-circle" src={% static 'img/what.png' %} alt="Circle image" width="50px">
+                </div>
+                <div class="col-3" align="center">
+                    <h5 class="fondoazul opacidad">+56982469715</h5>
+                </div>
+            </div>
+       
+            <div class="row">
+                <form name="formulario"> 
+                    <h4 class="letrascolor">Suscribete para que te lleguen todas nuestras noticias!</h4>
+                    <div class="form-group separador7">
+                        <label for="email"></label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese Su Correo">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary separador7 separador6" onclick="validar_envio()">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+
+            
+        </div>
+        
+        <!-- SCRIPT  -->
+        <script src={% static 'js/bootstrap.bundle.min.js' %}></script>
+        <script src={% static 'js/bootstrap.min.js' %}></script>
+        <script src={% static 'js/miscriptindex.js' %}></script>
+        <script src={% static 'js/jquery-3.6.0.min.js' %}></script>
+        <script src={% static 'js/miscriptJQ.js' %}></script>
+
+    </body>
+
+</html>

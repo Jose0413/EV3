@@ -1,0 +1,88 @@
+body{background: url(../img/fondo.jpg);
+
+}
+
+.fondoceleste{
+    background-color:aqua;
+    margin: 10px;
+    border: 4px solid white;
+
+}
+
+.fondonegro{
+    background-color: black;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 20%;
+
+}
+
+
+.fondoazul{
+    background-color:rgb(142, 217, 247);
+    margin: 15px;
+    border: 2px dotted black;
+    border-radius: 5%;
+    opacity: 0.8;
+
+}
+
+.separador{
+    margin: 20px;
+}
+
+.separador2{
+    margin-top: 70px;
+}
+
+.separador3{
+    margin: 50px;
+}
+
+.separador4{
+    margin-left: 50px;
+}
+
+.separador5{
+    margin-right: 50px;
+    margin-top: 35px;
+}
+
+.separador6{
+    margin-bottom: 50px;
+}
+
+.separador7{
+    margin-top: 30px;
+}
+
+.letrascolor{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+}
+
+.letrascolora{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.letrascolorb{
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: black;
+}
+
+.carousel-control-prev-icon{
+    background-color:  rgb(9, 243, 114);
+    border-radius: 40%;
+    
+}
+
+.carousel-control-next-icon{
+    background-color: rgb(9, 243, 114);
+    border-radius: 40%;
+}
+
+.opacidad{
+    opacity: 0.9;
+}

@@ -1,0 +1,71 @@
+{% load static %}
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Ayuda a un peludo </title>
+        <meta name"viewport" content="width=device-width, initial-scale=1">
+        
+        <link type="text/css" rel="stylesheet" href={% static 'css/bootstrap.min.css' %}>
+        <link type="text/css" rel="stylesheet" href={% static 'css/estilos.css' %}>
+        
+    </head>
+    <body>
+        <div class="container" align="center">
+            <div class="row">
+                <div class="col-12" align="center">
+                    <img src={% static 'img/logo.jpg' %} width="100px"/>
+                </div>
+            </div>
+            <div class="row fondoceleste">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item col-2">
+                    <a class="nav-link active letrascolor" href="/home">Inicio</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="/listamascotas">Mascotas</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="#!">Donar</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="/clima">Clima</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="/formulario">Formulario</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row" >
+                <div class="col-12 letrascolor fondoazul opacidad" align="center">
+                    <h4> Consulta El Clima <h4>
+                    <form>
+                        <div class="form-group col-5" >
+                            <input type="text" class="form-control" name="ciudad" id="ciudad" placeholder="Ingrese Ciudad">
+                        </div>
+                        <button id="botonconsulta" type="button" class="btn btn-primary separador" onclick="buscar()">Buscar</button>
+                    </form>
+
+                    <div id="consultaclima">
+                        <p id="datosciudad">La temperatura en <span id="ubicacion"></span> es :<span id="temperatura"></span> °C</p>
+                        <p id="datosciudad">La humedad es: <span id="humedad"></span> %</p>
+                        <p id="datosciudad">La velocidad del viento es: <span id="velocidadviento"></span> km/h</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- SCRIPT  -->
+        <script src={% static 'js/bootstrap.bundle.min.js' %}></script>
+        <script src={% static 'js/bootstrap.min.js' %}></script>
+        <script src={% static 'js/jquery-3.6.0.min.js' %}></script>
+        <script src={% static 'js/miscriptclima.js' %}></script>
+        
+    </body>
+</html>

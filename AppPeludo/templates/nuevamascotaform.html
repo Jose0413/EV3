@@ -1,0 +1,71 @@
+{% load static %}
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Ayuda a un peludo </title>
+        <meta name"viewport" content="width=device-width, initial-scale=1">
+        
+        <link type="text/css" rel="stylesheet" href={% static 'css/bootstrap.min.css' %}>
+        <link type="text/css" rel="stylesheet" href={% static 'css/estilos.css' %}>
+        
+    </head>
+    <body>
+        <div class="container" align="center">
+            <div class="row">
+                <div class="col-12" align="center">
+                    <img src={% static 'img/logo.jpg' %} width="100px"/>
+                </div>
+            </div>
+            <div class="row fondoceleste">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item col-2">
+                    <a class="nav-link active letrascolor" href="/home">Inicio</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="/listamascotas">Mascotas</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="#!">Donar</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="/clima">Clima</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="/formulario">Formulario</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <h1 class="fondoazul col-10" align="center" >Agregar Mascota</h1>
+
+
+            <form  action="" method = "POST" id="formulario" class="fondoazul">
+                {% csrf_token %}
+
+                <div class="form-group separador7 ">
+                    {{form.as_table}}
+                </div>
+
+                <input type = "submit" class="btn btn-danger separador7 separador6" value = "Guardar Mascota"  id="guardar"/>
+                <input type = "reset" class="btn btn-primary separador7 separador6"  value = "Limpiar Mascota"  id="limpiar"/>
+
+            </form>
+
+            <div class="alert alert-success" role="alert">
+                {{mensaje}}
+            </div>
+
+        </div>
+
+        
+
+        <!-- SCRIPT  -->
+        <script src={% static 'js/bootstrap.bundle.min.js' %}></script>
+        <script src={% static 'js/bootstrap.min.js' %}></script>
+        <script src={% static 'js/jquery-3.6.0.min.js' %}></script>
+        
+        
+    </body>
+</html>

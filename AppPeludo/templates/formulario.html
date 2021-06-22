@@ -1,0 +1,86 @@
+{% load static %}
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Ayuda a un peludo </title>
+        <meta name"viewport" content="width=device-width, initial-scale=1">
+        
+        <link type="text/css" rel="stylesheet" href={% static 'css/bootstrap.min.css' %}>
+        <link type="text/css" rel="stylesheet" href={% static 'css/estilos.css' %}>
+
+        
+    </head>
+    <body>
+        <div class="container " align="center" >
+            <div class="row">
+                <div class="col-12" align="center">
+                    <img src={% static 'img/logo.jpg' %} width="100px"/>
+                </div>
+            </div>
+            <div class="row fondoceleste">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item col-2">
+                    <a class="nav-link active letrascolor" href="/home">Inicio</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="/listamascotas">Mascotas</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="#!">Donar</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="/clima">Clima</a>
+                    </li>
+                    <li class="nav-item col-2">
+                    <a class="nav-link letrascolor" href="/formulario">Formulario</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row letrascolor fondoazul opacidad" >
+                <form name="formulario">
+                    <div class="form-group separador7 ">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese Nombre">
+                    </div>
+                    <div class="form-group separador7">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Ingrese Apellido">
+                    </div>
+                    <div class="form-group separador7">
+                        <label for="edad">Edad</label>
+                        <input type="text" class="form-control" name="edad" id="edad" placeholder="Ingrese Edad">
+                    </div>
+                    <div class="form-group separador7">
+                        <label for="direccion">Direccion</label>
+                        <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Ingrese Direccion">
+                    </div>
+                    <div class="form-group separador7">
+                        <label for="email">Correo Electronico</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese Su Correo">
+                    </div>
+                    <div class="form-group separador7">
+                        <label for="casilla">Aceptar Condiciones</label>
+                        <input type="checkbox" class="form-check" name="casilla" id="casilla">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary separador7 separador6" onclick="validar_envio()">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+
+            
+        </div>
+
+        <!-- SCRIPT -->
+        <script src={% static 'js/bootstrap.bundle.min.js' %}></script>
+        <script src={% static 'js/bootstrap.min.js' %}></script>
+        <script src={% static 'js/miscriptformulario.js' %}></script>
+        <script src={% static 'js/jquery-3.6.0.min.js' %}></script>
+
+        
+    </body>
+</html>
