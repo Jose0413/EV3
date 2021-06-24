@@ -7,4 +7,4 @@ class MascotasForm(ModelForm):
 
     class Meta:
         model = Mascotas
-        fields = ['codigo','nombre','especie','adoptado']
+        fields=['codigo','nombre','especie','adoptado']

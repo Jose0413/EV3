@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls.conf import include
 from AppPeludo.views import crearmascotas, crearmascotasnav, home
 from AppPeludo.views import clima
 from AppPeludo.views import formulario
@@ -40,10 +41,17 @@ urlpatterns = [
     path('leermascota/<int:id>',leermascota,name='leermascota'),
     path('editarmascota/<int:id>',editarmascota,name='editarmascota'),
     path('borrarmascota/<int:id>',borrarmascota,name='borrarmascota'),
+
+    #GUARDAR DATOS CON FORMULARIO
     path('nuevamascota/',nuevamascota,name='nuevamascota'),
     path('guardarmascota/',guardarmascota,name='guardarmascota'),
+
+    #GUARDAR DATOS CON FORMULARIO DE BASE DE DATOS
     path('formmascota/',formMascota,name='formmascota'),
     path('formmascotamod/<int:id>',formMascotamod,name='formmascotamod'),
     path('formmascotadel/<int:id>',formMascotadel,name='formmascotadel'),
+
+    #API
+    path('api/', include('rest_mascota.urls')),
 ]
 

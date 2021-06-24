@@ -62,7 +62,10 @@ def borrarmascota(request, id):
     mascota.delete()
 
     return redirect('listamascotas')
+#URL
 
+
+#POR FORMULARIO
 def nuevamascota(request):
     return render(request,'nuevamascota.html')
 
@@ -82,6 +85,7 @@ def guardarmascota(request):
 
     return redirect('listamascotas')
 
+#POR FORMULARIO COMPLETO
 def formMascota(request):
     datos = {
         'form' : MascotasForm()   
