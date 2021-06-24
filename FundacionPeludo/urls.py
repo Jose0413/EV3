@@ -44,7 +44,7 @@ urlpatterns = [
     path('nuevamascota/',nuevamascota,name='nuevamascota'),
     path('guardarmascota/',guardarmascota,name='guardarmascota'),
 
-    #API FORMULARIO
+    #FORMULARIO A LA BASE DE DATOS
     path('formmascota/',formMascota,name='formmascota'),
     path('formmascotamod/<int:id>',formMascotamod,name='formmascotamod'),
     path('formmascotadel/<int:id>',formMascotadel,name='formmascotadel'),
