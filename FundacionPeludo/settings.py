@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'AppPeludo',
     'rest_framework',
     'rest_mascota',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
