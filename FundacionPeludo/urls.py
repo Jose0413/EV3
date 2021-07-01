@@ -36,6 +36,7 @@ urlpatterns = [
     path('clima/',clima,name='clima'),
     path('formulario/',formulario,name='formulario'),
     path('listamascotas/',listamascotas,name='listamascotas'),
+    
     path('crearmascotas/',crearmascotas,name='crearmascotas'),
     path('crearmascotasnav/<str:codigo>/<str:nombre>',crearmascotasnav,name='crearmascotasnav'),
     path('leermascota/<int:id>',leermascota,name='leermascota'),
